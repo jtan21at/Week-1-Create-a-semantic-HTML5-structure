@@ -1,50 +1,59 @@
-/* Global Styles */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-/* Header Styles */
 header {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px;
+    grid-column: 1 / -1;
+    background-color: #87ceeb;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 10px;
+nav {
+    background-color: #fffacd;
+    padding: 20px;
+    grid-column: 1 / 2;
 }
 
-/* Article Styles */
+main {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    gap: 20px;
+}
+
 article {
-  background-color: #d1e7dd;
-  padding: 20px;
-  border: 1px solid #ced4da;
+    background-color: #90ee90;
+    padding: 20px;
 }
 
-article header,
-article section,
-article footer {
-  margin-bottom: 20px;
+article section {
+    background-color: #d8bfd8;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-/* Aside Styles */
 aside {
-  background-color: #f8d7da;
-  padding: 20px;
-  border: 1px solid #f5c6cb;
+    background-color: #ffcccb;
+    padding: 20px;
 }
 
 aside section {
-  margin-bottom: 20px;
+    background-color: #ffa07a;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-/* Footer Styles */
 footer {
-  background-color: #ffc107;
-  color: #212529;
-  padding: 10px;
-  text-align: center;
+    grid-column: 1 / -1;
+    background-color: #87ceeb;
+    padding: 20px;
+    text-align: center;
 }

@@ -1,48 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semantic HTML Structure</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="#">Nav</a>
-    </nav>
-  </header>
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  <article>
-    <header>
-      <h1>Article</h1>
-    </header>
-    <section>
-      <h2>Section 1</h2>
-      <p>Content for Section 1</p>
-    </section>
-    <section>
-      <h2>Section 2</h2>
-      <p>Content for Section 2</p>
-    </section>
-    <footer>
-      <p>Article Footer</p>
-    </footer>
-  </article>
+/* Style the header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-  <aside>
-    <section>
-      <h2>Aside Section 1</h2>
-      <p>Content for Aside Section 1</p>
-    </section>
-    <section>
-      <h2>Aside Section 2</h2>
-      <p>Content for Aside Section 2</p>
-    </section>
-  </aside>
+/* Style the navigation */
+nav {
+    background-color: #555;
+}
 
-  <footer>
-    <p>Page Footer</p>
-  </footer>
-</body>
-</html>
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style the main content area */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+article {
+    margin-bottom: 10px;
+}
+
+aside {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
